@@ -1,4 +1,15 @@
 /* Estilo do card original (mantido) */
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transform: 0.2 linear;
+}
+
 .card-sl {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -106,3 +117,4 @@
   text-align: center;
   color: #1F487E;
 }
+

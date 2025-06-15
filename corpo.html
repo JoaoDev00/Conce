@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,45 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Font Awesome (ícones) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Seu CSS -->
+  <!-- Meu CSS -->
   <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
+
+  <head class="header">
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Imagens/Carros/LOWER.png" alt="Bootstrap" width="100" height="100">
+        </a>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <a href="#">HOME</a>
+      <a href="#">Sobre</a>
+      <a href="#">Avaliações</a>
+      <a href="#">Menu</a>
+      <a href="#">Endereço</a>
+    </nav>
+
+  </head>
 
   <!-- Carrossel -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
     </div>
 
     <div class="carousel-inner">
@@ -56,11 +82,13 @@
       <div class="col-md-3">
         <div class="card-sl">
           <div class="card-image">
-            <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            <img
+              src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
           </div>
           <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
           <div class="card-heading">Audi Q8</div>
-          <div class="card-text">Audi Q8 is a full-size luxury crossover SUV coupé made by Audi that was launched in 2018.</div>
+          <div class="card-text">Audi Q8 is a full-size luxury crossover SUV coupé made by Audi that was launched in
+            2018.</div>
           <div class="card-text">$67,400</div>
           <a href="#" class="card-button">Purchase</a>
         </div>
@@ -68,53 +96,55 @@
     </div>
   </div>
   <!-- Grid com 5 cards pequenos -->
-<div class="container mt-5">
-  <div class="row justify-content-center g-4">
-    <div class="col-md-2 col-sm-4 col-6">
-      <div class="card-sl small-card">
-        <div class="card-image">
-          <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+  <div class="container mt-5">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-2 col-sm-4 col-6">
+        <div class="card-sl small-card">
+          <div class="card-image">
+            <img
+              src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+          </div>
+          <div class="card-heading">Audi Q8</div>
         </div>
-        <div class="card-heading">Audi Q8</div>
       </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-6">
-      <div class="card-sl small-card">
-        <div class="card-image">
-          <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" />
+      <div class="col-md-2 col-sm-4 col-6">
+        <div class="card-sl small-card">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" />
+          </div>
+          <div class="card-heading">BMW M4</div>
         </div>
-        <div class="card-heading">BMW M4</div>
       </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-6">
-      <div class="card-sl small-card">
-        <div class="card-image">
-          <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" />
+      <div class="col-md-2 col-sm-4 col-6">
+        <div class="card-sl small-card">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" />
+          </div>
+          <div class="card-heading">Mercedes AMG</div>
         </div>
-        <div class="card-heading">Mercedes AMG</div>
       </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-6">
-      <div class="card-sl small-card">
-        <div class="card-image">
-          <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" />
+      <div class="col-md-2 col-sm-4 col-6">
+        <div class="card-sl small-card">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" />
+          </div>
+          <div class="card-heading">Alfa Romeo</div>
         </div>
-        <div class="card-heading">Alfa Romeo</div>
       </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-6">
-      <div class="card-sl small-card">
-        <div class="card-image">
-          <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg" />
+      <div class="col-md-2 col-sm-4 col-6">
+        <div class="card-sl small-card">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg" />
+          </div>
+          <div class="card-heading">Porsche 911</div>
         </div>
-        <div class="card-heading">Porsche 911</div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
