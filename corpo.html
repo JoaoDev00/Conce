@@ -3,35 +3,43 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Concessionária</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Font Awesome (ícones) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Meu CSS -->
+  <!-- Seu CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar bg-body-tertiary">
+  <header>
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="Imagens/Carros/LOWER.png" alt="Logo Power Car" width="90" height="90" />
         </a>
-      </div>
-    </nav>
+        <button id="theme-toggle" class="btn btn-outline-light ms-auto">Modo Escuro <i class="fa fa-moon"></i></button>
 
-    <nav class="navbar">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">Sobre</a>
-      <a href="#" class="nav-link">Avaliações</a>
-      <a href="#" class="nav-link">Menu</a>
-      <a href="#" class="nav-link">Endereço</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Avaliações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Endereço</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -43,7 +51,6 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
     </div>
-
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="Imagens/Carros/BMW.jpg" class="d-block w-100" alt="Mercedes AMG GT, carro azul" />
@@ -60,7 +67,6 @@
         </div>
       </div>
     </div>
-
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
@@ -71,7 +77,7 @@
     </button>
   </div>
 
-  <!-- Card de Carro -->
+  <!-- Cards principais -->
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-3">
@@ -84,25 +90,64 @@
           <a class="card-action" href="#" aria-label="Favoritar Audi Q8"><i class="fa fa-heart"></i></a>
           <div class="card-heading">Audi Q8</div>
           <div class="card-text">
-            Audi Q8 é um SUV coupé de luxo de tamanho grande fabricado pela Audi,
-            lançado em 2018.
+            Audi Q8 é um SUV coupé de luxo de tamanho grande fabricado pela Audi, lançado em 2018.
           </div>
           <div class="card-text">$67,400</div>
           <a href="#" class="card-button" aria-label="Comprar Audi Q8">Purchase</a>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card-sl">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="BMW M4 cinza" />
+          </div>
+          <a class="card-action" href="#" aria-label="Favoritar BMW M4"><i class="fa fa-heart"></i></a>
+          <div class="card-heading">BMW M4</div>
+          <div class="card-text">
+            BMW M4 é um cupê esportivo com design agressivo e alta performance.
+          </div>
+          <div class="card-text">$72,000</div>
+          <a href="#" class="card-button" aria-label="Comprar BMW M4">Purchase</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-sl">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Mercedes AMG preto" />
+          </div>
+          <a class="card-action" href="#" aria-label="Favoritar Mercedes AMG"><i class="fa fa-heart"></i></a>
+          <div class="card-heading">Mercedes AMG</div>
+          <div class="card-text">
+            Mercedes AMG é sinônimo de luxo e potência para quem busca o melhor.
+          </div>
+          <div class="card-text">$85,000</div>
+          <a href="#" class="card-button" aria-label="Comprar Mercedes AMG">Purchase</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-sl">
+          <div class="card-image">
+            <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="Alfa Romeo vermelho" />
+          </div>
+          <a class="card-action" href="#" aria-label="Favoritar Alfa Romeo"><i class="fa fa-heart"></i></a>
+          <div class="card-heading">Alfa Romeo</div>
+          <div class="card-text">
+            Alfa Romeo oferece design italiano com desempenho esportivo.
+          </div>
+          <div class="card-text">$68,500</div>
+          <a href="#" class="card-button" aria-label="Comprar Alfa Romeo">Purchase</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Grid com 5 cards pequenos -->
+  <!-- Cards pequenos -->
   <div class="container mt-5">
     <div class="row justify-content-center g-4">
       <div class="col-md-2 col-sm-4 col-6">
         <div class="card-sl small-card">
           <div class="card-image">
-            <img
-              src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
-              alt="Audi Q8 amarelo" />
+            <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg" alt="Audi Q8 amarelo" />
           </div>
           <div class="card-heading">Audi Q8</div>
         </div>
@@ -142,8 +187,8 @@
     </div>
   </div>
 
-  <!-- Rodapé com redes sociais -->
-  <footer class="mt-5">
+  <!-- Rodapé -->
+  <footer>
     <div class="social-icons d-flex justify-content-center gap-3 mt-2">
       <a href="https://facebook.com" target="_blank" class="text-white" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
@@ -155,13 +200,46 @@
         <i class="fab fa-twitter"></i>
       </a>
     </div>
-    <div class="text-center mt-2">
-      &copy; 2025 Power Car. Todos os direitos reservados.
-    </div>
+    <div class="text-center mt-2">&copy; 2025 Power Car. Todos os direitos reservados.</div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script tema escuro/claro -->
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function updateThemeButtonText(theme) {
+      toggleButton.innerHTML = theme === 'dark'
+        ? 'Modo Claro <i class="fa fa-sun"></i>'
+        : 'Modo Escuro <i class="fa fa-moon"></i>';
+    }
+
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-bs-theme', savedTheme);
+      updateThemeButtonText(savedTheme);
+    } else if (prefersDarkScheme.matches) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+      updateThemeButtonText('dark');
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+      updateThemeButtonText('light');
+    }
+
+    toggleButton.setAttribute('aria-pressed', document.documentElement.getAttribute('data-bs-theme') === 'dark');
+
+    toggleButton.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-bs-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggleButton.setAttribute('aria-pressed', newTheme === 'dark');
+      updateThemeButtonText(newTheme);
+    });
+  </script>
 </body>
 
 </html>
