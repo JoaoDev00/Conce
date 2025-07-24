@@ -209,3 +209,26 @@ footer {
 .social-icons a:hover {
   color: #ccc;
 }
+
+.brand-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.brand-card img {
+  max-height: 70px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-card:hover {
+  transform: scale(1.1);
+}
+
+.brand-name {
+  font-weight: 600;
+  color: #1F487E; /* Cor padrão azul */
+  user-select: none;
+}
